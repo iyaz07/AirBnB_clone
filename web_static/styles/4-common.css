@@ -1,11 +1,13 @@
-/* styles/2-common.css */
-body {
+
+dy {
     margin: 0;
     padding: 0;
-    background-image: url(../'images/icon.png');
+    /*background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;*/
     font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font color: #484848;
-    font size: 14px;
+    color: #484848;
+    font-size: 14px;
 }
 .container {
     max-width: 1000px;
