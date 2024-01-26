@@ -6,80 +6,84 @@
     border-radius: 4px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+	align-items: center;
+	position: relative;
+	/*margin-bottom: 30px;*/
 }
 
-.locations{
-	text-align: left;
-	height: 100%;
+.filters .locations{
 	width: 25%;
+	height: 100%;
 	border-right: solid 1px #DDDDDD;
-	margin-left: 30px;
-	float: left;
-	}
-.amenities{
 	text-align: left;
+	position: relative;
+}
+
+.filters .amenities{
 	height: 100%;
 	width:25%;
+}
+
+h4 { 
+	margin: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	position: absolute;
 	margin-left: 30px;
-	float: left;
-	}
+}
+
 h3{
 	font-weight: 600;
 	margin: 0px;
 	padding: 0px;
 	margin-top: 17px;
-    color: black
+    color: black;
+	margin-left: 30px;
 	}
-h4{
-	font-weight: 400;
-	margin: 0px;
-	padding: 0px;
-	font-size: 14px;
-    padding-left: 30px;
-	}	
+	
 
 .popover {
-  display: none; /* Not displayed by default */
+  visibility: hidden;
   background-color: #FAFAFA;
-  margin-top: 7%;
+  position: relative;
+  margin-top: 14%;
+  max-width: 1000px;
   padding-bottom: 10%;
+  margin-right: auto;
   border: 1px solid #DDDDDD;
   border-radius: 4px;
-  position: relative;
   z-index: 1;
 }
 
-.popover li h2{
+.popover li h2 {
 	padding: 0;
 	margin: 0;
-}
-
-.popover_list{
-	padding: 0px;
-	margin: 0px;
-    width: 100%;
-	padding-left: 10%;
-	padding-bottom: 10px;
-}
-
-li{
-	list-style-type: none;	
-}
-
-ul{
+	margin-top: 20px;
 	list-style: none;
-	padding-top: 30px;
-    width: 100%;
+}
+
+.popover li{
+	padding: 0px;
+	margin-top: 5px;
+	list-style: none;
+}
+
+.amenities .popover li:first-child {
+	margin-top: 15px;
+}
+
+.popover_list li{
+	list-style: none;
+	margin-left: -20px;
 }
 
 .locations:hover >.popover{
-	display: block;
+	visibility: visible;
 	margin-bottom: 50px;
 }
 
 .amenities:hover > .popover{
-	display: block;
+	visibility: visible;
 }
 
 .filters button {
@@ -90,6 +94,7 @@ ul{
     width: 20%;
     border: none;
     border-radius: 4px;
+	margin-left: auto;
     margin-right: 30px;
     cursor: pointer;
 }
